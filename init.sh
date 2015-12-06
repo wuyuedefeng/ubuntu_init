@@ -1,7 +1,8 @@
 #!/bin/sh
 
-mkdir /zoon
+mkdir ~/zoon
 sudo apt-get update
+
 
 #安装git
 chmod +x ./install_git.sh
@@ -10,4 +11,8 @@ chmod +x ./install_git.sh
 #安装openssh-server
 chmod +x ./install_openssh_server.sh
 ./install_openssh_server.sh
+
+#安装openssh-server
+chmod +x ./install_nginx.sh
+./install_nginx.sh
 
